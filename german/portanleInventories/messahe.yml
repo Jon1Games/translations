@@ -31,10 +31,10 @@
 # ------------------------------------------------------------------------------------- #
 
 # Edit the prefix für the entire plugin.
-prefix: "&7Portable Inventories &d\u00BB&f"
+prefix: "&aGamingLounge &d\u00BB&f"
 
 # The message that is sent when someone doesn't have permission to execute a command.
-no-perms: "{prefix} &cI'm sorry you don't have permission to do that. &7({permission})"
+no-perms: "{prefix} &cEs tut mir leid, aber du hast keine Rechte dies zu tun. &7({permission})"
 
 # This message supports scalar. Which means you can have a multiline message be sent.
 # I would suggest that you familiarize yourself with scalar to better use it then I can.
@@ -45,7 +45,7 @@ help-message: |+
   &7/pci &6[&7rl &oor&7 reload&6] &6[&7settings &oor&7 messages] &7>
   &f Reload the specified config.
   &7/pci &6[&7version &oor&7 ver&6] &7>&f Get the version of the plugin.
-  &7/enderkiste &6[&7player&6] &7>&f Open deine enderchest, and if specified the targets.
+  &7/Enderkiste &6[&7player&6] &7>&f Open deine enderchest, and if specified the targets.
   &7/craft &6[&7player&6] &7>&f Opens a workbench für you or another player.
   &7/anvil &6[&7player&6] &7>&f Opens an Amboss für you or another player.
   &7/enchanttable &6[&7player&6] &7>
