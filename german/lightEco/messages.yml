@@ -1,0 +1,210 @@
+#
+#  $$\ $$\           $$\        $$\     $$$$$$$$\
+#  $$ |\__|          $$ |       $$ |    $$  _____|
+#  $$ |$$\  $$$$$$\  $$$$$$$\ $$$$$$\   $$ |      $$$$$$$\  $$$$$$\  $$$$$$$\   $$$$$$\  $$$$$$\$$$$\  $$\   $$\
+#  $$ |$$ |$$  __$$\ $$  __$$\\_$$  _|  $$$$$\   $$  _____|$$  __$$\ $$  __$$\ $$  __$$\ $$  _$$  _$$\ $$ |  $$ |
+#  $$ |$$ |$$ /  $$ |$$ |  $$ | $$ |    $$  __|  $$ /      $$ /  $$ |$$ |  $$ |$$ /  $$ |$$ / $$ / $$ |$$ |  $$ |
+#  $$ |$$ |$$ |  $$ |$$ |  $$ | $$ |$$\ $$ |     $$ |      $$ |  $$ |$$ |  $$ |$$ |  $$ |$$ | $$ | $$ |$$ |  $$ |
+#  $$ |$$ |\$$$$$$$ |$$ |  $$ | \$$$$  |$$$$$$$$\\$$$$$$$\ \$$$$$$  |$$ |  $$ |\$$$$$$  |$$ | $$ | $$ |\$$$$$$$ |
+#  \__|\__| \____$$ |\__|  \__|  \____/ \________|\_______| \______/ \__|  \__| \______/ \__| \__| \__| \____$$ |
+#          $$\   $$ |                                                                                  $$\   $$ |
+#          \$$$$$$  |                                                                                  \$$$$$$  |
+#           \______/                                                                                    \______/
+#
+# Here you can translate ALL the plugin messages. You can use ColorCodes like &6 and HEX Colors like #ff4442
+#
+prefix: '&6&l&olight&7Economy &8●⏺ &7'
+noPermission: '&6Du hast keine Berechtigungen diesen Befehl auszuführen, solte dies
+  ein Fehler sein, wende dich bitte an eine Teammitglied&7!'
+notNumber: '&6Diese ist keine Nummer &7!'
+exception: '&4Ups, ein Fehler ist passiert, bitte wende dich an ein Teammitglied&7!'
+notEnoughtMoney: '&6Du hast nicht genug Geld für diese Tätigkeit&7!'
+notEnoughtMoneyTarget: '&6Der Spieler hat nicht genug Geld für diese Aktion &7!'
+playerNotFound: '&6Dieser Spieler konnte nicht gefunden werden&7!'
+playerNotExists: '&6Dieser Spieler existiert nicht&7!'
+wrongCommand: '&6Dieser Befehl existiert nicht, benutze &4#command#'
+cooldown: '&6Bitte warte &4#seconds# &6Sekunden&7(&6s&7)&7, &6bevor du diesen Befehl
+  wieder ausführst&7!'
+notYourself: '&6Du kannst dir nicht selbst Geld senden&7!'
+notZero: '&6Du musst mindestens &4#min-amount# &6#currency# eingeben &7!'
+onlyPostiv: '&6Bitte benutze nur positive Werte &7!'
+updatePlayerName: '&6Player &4#target# &6hat seinen Namen zu &4#new-name#  geändert&7!'
+sqlError: '&6Es gab einen Error beim SQLGetter, bitte kontaktieren sie ein Teammitglied
+  &7!'
+targetIsOffline: '&6REMINDER &8| &7Der Spieler den du versucht hast zu erreichen ist
+  offline oder auf einem anderen Server!'
+reload: '&7Die config wurde erfolgreich reloaded!'
+noConsole: Dieser Command kann nur von einem Spieler ausgeführt werden
+noPlayer: '&6Diesen Command kann nur die Konsole ausführen!'
+maxMoneyPocket: '&6Du hast die maximale Geldmenge erreicht, dies solte unmöglich sein&7!'
+maxMoneyBank: '&6Deine Bank hat das maximale Geldlimit erreicht, dies solte unmöglich
+  sein&7!'
+negativeNumber: '&6Du kannst keine negativen Nummern verwenden&7!'
+transactionFailed: '&7Die Transaktion wurde Abgebrochen mit dem Grund: &6#reason#'
+firstJoinMessage: '&7Willkommen auf GamingLoune.me! Da du hier neu bist, kriegst du
+  &6#startbalance# &7#currency#'
+# ●
+moneyBalance: '&7Du hast aktuell &6#balance# &7#currency#'
+moneyBalanceOther: '&7Der Spieler &6#target# &7hat &6#balance# &7#currency#'
+moneyAddPlayer: '&7Du hast &6#amount# &7#currency# zum Spieler &6#target#. &7hinzugefügt
+  nun hat er &6#balance# &7#currency#'
+moneyAddNonPlayer: '&7Du hast &6#amount# &7#currency# zu einem nicht-Spieler account
+  namens &6#target# hinzugefügt. &7Er hat nun &6#balance# &7#currency#'
+moneySetPlayer: '&7Du hast das Geld von &6#target# &7auf &6#amount# &7#currency# gesetzt.'
+moneySetNonPlayer: '&7Das Guthaben von &6#target# &7beträgt nun &6#amount# &7#currency#.'
+moneyRemovePlayer: '&7Du hast &6#amount# &7#currency# von &6#target#&7 entfernt!'
+moneyTopHeader:
+- '&7&m-----&r&6●&7&m-----&r &6&l&olight&7Economy &7&m-----&r&6●&7&m-----&r'
+- ' &7Top 10 Spieler mit dem meisten'
+- '     &7Geld auf dem Server'
+- ' '
+- '&8● &6&lGesamt &7- &6#overall# &7#currency#'
+- ' '
+moneyTopFormat: '&8● &6&l#number#&7# &8● &6#name# &7- &6#amount# &7#currency#'
+moneyTopFooter:
+- ' '
+- '&7&m-----&r&6●&7&m-----&r &7&m-----&r&6●&7⏺&6●&7&m-----&r &7&m-----&r&6●&7&m-----&r'
+bankTopHeader:
+- '&7&m-----&r&6●&7&m-----&r &6&l&olight&7Economy &7&m-----&r&6●&7&m-----&r'
+- ' &7Top 10 Bankkonten auf dem Server'
+- '     &7 mit dem höhsten Guthaben'
+- ' '
+- '&8● &6&lGesamt &7- &6#overall# &7#currency#'
+- ' '
+bankTopFormat: '&8● &6&l#number#&7# &8● &6#name# &7- &6#amount# &7#currency#'
+bankTopFooter:
+- ' '
+- '&7&m-----&r&6●&7&m-----&r &7&m-----&r&6●&7⏺&6●&7&m-----&r &7&m-----&r&6●&7&m-----&r'
+moneyAddAll: '&6#successcount# &7von &6#overallcount# &7Spieler haben &6#amount# &7#currency#
+  bekommen.'
+moneyAddAllTarget: Du hast eine globale Zahlung von &6#sender#&7. im Wert von &6#amount#
+  &7#currency# erhalten.
+moneyAddAllFailed: '&6#failcount# &7Transaktion fehlgeschlagen. Bitte kontaktiere
+  ein Teammitglied solte dies ein Fehler sein.'
+# ●
+payToggleEnabled: '&7Du hast Zahlungen von anderen Spielern &aaktiviert&7.'
+payToggleDisabled: '&7Du hast Zahlungen von anderen Spielern &6deaktiviert&7.'
+paySenderOnSuccess: '&7Du hast erfolgreich &6#amount# &7#currency# an &6#target# &7gesendet.'
+payTargetOnSuccess: '&7Du hast &6#amount# &7#currency# von &6#sender# &7erhalten.'
+payTransactionFailed: '&6Die Zahlung ist fehlgeschlagen, mit der Begründung: &7#reason#'
+payCooldown: '&6Bitte warte einen Moment ab&7!'
+payNotHappening: '&6Dies solte nicht passiert sein, du verlierst mit dem /pay Command
+  Geld, bitte kontaktiere umgehen ein Teammitglied!'
+payWrongCommand: '&6Falscher command, bitte benutze &7/pay [Spielername] [Wert] &6oder
+  &7/pay toggle'
+# ●
+voucherCreate: '&7Du hast &6#amount# &7#currency# in einen Gutschein umgewandelt.'
+voucherMinValue: '&7Du brauchst mindestens &6#min-value# &7#currency# um einen Gutschein
+  zu erstellen.'
+voucherMaxValue: '&7Du hast den maximalen Gutscheinwert erreicht! Das Maximum ist
+  &6#max-value# &7#currency#.'
+voucherDisabled: '&7Das Gutscheinsystem ist gerade &6deaktiviert&7!'
+convertNotEnough: '&6Du hast nicht genung Geld für diesen Gutschein&7!'
+convertNotEnabled: '&6Gutscheine sind deaktiviert &7!'
+convertCollect: '&7Du hast &6#amount# &7#currency# von einem Gutschein bekommen.'
+voucherOffHanad: '&7Du kannst keine Gutscheine in deine &6offhand &7legen!'
+# ●
+bankDepositValueViaChat: '&7Bitte gib den Wert ein den du verwenden möchtest!'
+bankDepositSuccessfully: '&7Du hast &6#amount# &7#currency# zu deiner Bank hinzugefügt.'
+bankDepositNotEnough: '&7Du hast nicht genug Geld um es auf deine Bank zu legen.'
+bankDepositOverLimit: '&7Deine Bank hast, das Limit erreicht, für mehr kaufe ein upgrade.'
+bankDepositAll: '&7Du hast &6#amount# &7#currency# zu deiner Bank hinzugefügt.'
+bankDepositAllLimit: '&7Du hast &6#amount# &7#currency# zu deiner Bank hinzugefügt
+  und das Limit erreicht.'
+bankDepositNotPossible: '&7Du kannst nicht noch mehr zu deiner Bank hinzufügen, da
+  du das Limit erreicht hast.'
+bankWithdrawNotEnough: '&7Du hast nicht genug Geld auf der Bank.'
+bankWithdrawValueViaChat: '&7Bitte gib ein wie viel Geld du auf deine Bank einzahlen
+  möchtest.'
+bankWithdrawSuccessfully: '&7Es wurden &6#amount# &7#currency# von deiner Bank abgehoben.'
+bankWithdrawAll: '&7Du hast dein Gesamtes Geld von deiner Bank abgehoben.'
+bankAddPlayer: '&7Du hast &6#amount# &7#currency# &7an &6#target# &7seine Bank gesendet.'
+bankAddPlayerLimit: '&6Du kannst nicht noch mehr Geld an diesen Spieler senden. Seine
+  Bank ist voll. Das Limit ist &4#limit#&7!'
+bankSetPlayer: '&7Du hast,&6#target# &7sein Bankkonto auf &6#amount# &7#currency#
+  gesetzt'
+bankSetPlayerLimit: '&6Du kannst diesen Spieler seinen Bankwert nicht so hoch setzen,
+  sein Banklimit beträgt &4#limit#&7!'
+bankRemovePlayer: '&7Du hast &6#amount# &7#currency# von &6#target# &7seinem Bankkonto
+  entfernt.'
+bankShowOther:
+- '&7&m-----&r&6●&7&m-----&r &6&l&olight&7Economy &7&m-----&r&6●&7&m-----&r'
+- ' '
+- '&7Bank Statistiken von &6#target#'
+- ' '
+- '&7Aktuelles Guthaben: &6#bank-balance# &7#currency# / &6#limit-by-level# &7#currency#'
+- '&7Aktuelles Banklevel: &6#current-bank-level# &7/ &6#max-level#'
+- ' '
+- '&7&m-----&r&6●&7&m-----&r &7&m-----&r&6●&7⏺&6●&7&m-----&r &7&m-----&r&6●&7&m-----&r'
+# ●
+bankUpgradeNoPermission: '&6Du hast keine Rechte diesen Befehl zu nutzen, du brauchst
+  &7#permission#'
+bankUpgradeAlreadyOwn: '&6Du besitzt dieses Level bereits &7!'
+bankUpgradeNeedPreviousLevel: '&6Du musst das vorheriege Banklevel freischalten &7!'
+bankUpgradeNoMoney: '&6Du hast nicht genug Geld für dieses Level &7!'
+bankUpgradeSuccess: '&7Du hast erfolgreich das Banklevel &6#level#&7 gekauft.'
+bankSetLevelPlayer: '&7Du hast das Banklevel von &6#old-level# &7auf &6#new-level#
+  &7gesetzt.'
+bankSetLevelPlayerMax: '&6Diese Level existiert nicht in der &4bank-level.yml &7!'
+bankSetLevelPlayerToLow: '&6Du kannst das Bankleve nicht auf &40 &6oder &4nidrieger
+  &7setzen!'
+bankDisabled: '&6Das Banksystem ist auf diesem Server deaktiviert&7!'
+# ●
+loseMoneyOnDeath: '&7Du bist gestorben und hast &6#amount# &7#currency# verloren.'
+# ●
+helpCommandAdmin:
+- '&7&m-----&r&6●&7&m-----&r &6&l&olight&7Economy &7&m-----&r&6●&7&m-----&r'
+- ' '
+- '  &7Admin Befehle:'
+- '&8● &6/money balance &8[&7Spieler&8] &7- Zeigt das Spielerguthaben'
+- '&8● &6/money add/set/remove &8[&7Spieler&8] &8[&7Wert&8] &7- Ändert das Guthaben
+  des Spielers'
+- '&8● &6/le reload &7- Reloaded die Configs.'
+- '&8● &6/le help &7- Zeigt alle Befehle'
+- '&8● &6/bank add/set/remove &8[&7Spieler&8] &8[&7Wert&8] &7- Ändert das Bankguthaben
+  des Spielers'
+- '&8● &6/bank level set &8[&7Level&8] &7- Ändert das Banklevel des Spielers'
+- '&8● &6/bank show &8[&7Spieler&8] &7- Zeigt die Bankstatistiken des Spielers'
+- '&8● &6/bank open &8[&7Spieler&8] &7- Öffnet das Bank Menü des Spielers'
+- ' '
+- '  &7Spieler Befehle:'
+- '&8● &6/pay &8[&7Spieler&8] &8[&7Wert&8] &7- Sendet einem anderem Spieler Geld'
+- '&8● &6/pay toggle &7- Aktiviere/Deaktiviere Zahlungen'
+- '&8● &6/money top &7- Zeigt die 10 reichsten Spieler'
+- '&8● &6/money voucher create &8[&7Wert&8] &7- Erstellt einen Physischen Coupon'
+- '&8● &6/money &7- Zeigt dein aktuelles Guthaben'
+- ' '
+- ' &7Konsolen Befehle:'
+- '&8● &6/eco give&7/&6remove&7/&6set &8[&7Spieler&8] &8[&7Wert&8] &7- Verwahltet
+  Geld über die Konsole'
+- '&8● &6/eco bank open &8[&7Spieler&8] &7- Öffnet das Bankmenü des Spielers.'
+- ' '
+- '&7&m-----&r&6●&7&m-----&r &7&m-----&r&6●&7⏺&6●&7&m-----&r &7&m-----&r&6●&7&m-----&r'
+helpCommandPlayer:
+- '&7&m-----&r&6●&7&m-----&r &6&l&olight&7Economy &7&m-----&r&6●&7&m-----&r'
+- ' '
+- '  &7Spieler Befehle:'
+- '&8● &6/pay &8[&7Spieler&8] &8[&7Wert&8] &7- Sende Spielern Geld'
+- '&8● &6/pay toggle &7- Aktiviere/Deaktiviere Zahlungen'
+- '&8● &6/money top &7- Zeigt die 10 reichsten Spieler'
+- '&8● &6/money &7- Zeigt dein aktuelles Guthaben'
+- '&8● &6/money voucher create &8[&7Wert&8] &7- Erstellt einen Physischen Coupon'
+- '&8● &6/bank &7- Öffnet das Bank-Menü'
+- ' '
+- '&7&m-----&r&6●&7&m-----&r &7&m-----&r&6●&7⏺&6●&7&m-----&r &7&m-----&r&6●&7&m-----&r'
+# ●
+npcCreateWrongRankID: '&6Bitte benutze Zahlen von &41 &6zu &410'
+timeRewardMoney: 'Du hast #amount# #currency# für das spielen in den letzten #intervallMinutes#
+  Minuten bekommen.'
+debugMessage:
+- '&7&m-----&r&6●&7&m-----&r &6&l&olight&7Economy &7&m-----&r&6●&7&m-----&r'
+- ' '
+- ' &8● &7Die Datenbank hat sich &aerfolgreich &7mit &6#databaseSource# &7verbunden!'
+- '  &8- &7Aktuelle Verbindungen: &6#totalConnections#'
+- '  &8- &7Aktive Verbindungen: &6#activeConnections#'
+- '  &8- &7Wartende Verbindungen: &6#pendingThreads#'
+- '  &8- &7Datenbank Nutzer: &6#tableSize# &7(Dauerte &6#queryDuration# &7ms)'
+- '&8● &7Bukkit Version: &6#bukkitVersion#'
+- '&8● &7Economy Version: &6#ecoVersion#'
+- ' '
+- '&7&m-----&r&6●&7&m-----&r &7&m-----&r&6●&7⏺&6●&7&m-----&r &7&m-----&r&6●&7&m-----&r'
