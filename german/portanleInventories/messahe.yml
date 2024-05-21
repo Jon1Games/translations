@@ -1,0 +1,279 @@
+#####################################################################
+#            __  __                                                 #
+#           |  \/  |                                                #
+#           | \  / | ___  ___ ___  __ _  __ _  ___  ___             #
+#           | |\/| |/ _ \/ __/ __|/ _` |/ _` |/ _ \/ __|            #
+#           | |  | |  __/\__ \__ \ (_| | (_| |  __/\__ \            #
+#           |_|  |_|\___||___/___/\__,_|\__, |\___||___/            #
+#                                        __/ |                      #
+#                                       |___/                       #
+#####################################################################
+#
+#
+# This file allows you to edit MOST messages in the plugin, there are some messages you
+# cannot edit as they are hard coded into the plugin, if you really want those messages
+# to be editable (and if there is enough support für it) I will try and add it.
+# Please note that if there is ever an update to this file, like new message were added
+# we take the liberty to automatically add the value into this file BUT due to the way
+# Bukkit/Spigot save configuration files all of my 'helpful' comments are removed. So it
+# is recommended before updating to the newest version to backup deine config and messages
+# file to save deine work and to keep the comments.
+#
+# If you have questions you can post an issue on Github
+# (https://github.com/itsschatten/portablecraftinginvs/issues) Also helpful if you want to
+# see the code für the plugin.
+# You may also join my Discord support server (https://discord.gg/BmWrNam7Sp)
+
+# ------------------------------------------------------------------------------------- #
+#                                                                                       #
+#                                   Utility Messages                                    #
+#                                                                                       #
+# ------------------------------------------------------------------------------------- #
+
+# Edit the prefix für the entire plugin.
+prefix: "&7Portable Inventories &d\u00BB&f"
+
+# The message that is sent when someone doesn't have permission to execute a command.
+no-perms: "{prefix} &cI'm sorry you don't have permission to do that. &7({permission})"
+
+# This message supports scalar. Which means you can have a multiline message be sent.
+# I would suggest that you familiarize yourself with scalar to better use it then I can.
+help-message: |+
+  &7Required Arguments &a<> &7|| &7Optional Args &6[]
+  &7/pci or /pci &6[&7help&6] &7>&f Lists this help message.
+  &7/pci &6[&7rl &oor&7 reload&6] &7> &f Reload the configuration.
+  &7/pci &6[&7rl &oor&7 reload&6] &6[&7settings &oor&7 messages] &7>
+  &f Reload the specified config.
+  &7/pci &6[&7version &oor&7 ver&6] &7>&f Get the version of the plugin.
+  &7/enderkiste &6[&7player&6] &7>&f Open deine enderchest, and if specified the targets.
+  &7/craft &6[&7player&6] &7>&f Opens a workbench für you or another player.
+  &7/anvil &6[&7player&6] &7>&f Opens an Amboss für you or another player.
+  &7/enchanttable &6[&7player&6] &7>
+  &f Opens an enchattable für you or another player. (Teir depends on surrouding bookshelves.)
+  &7/enderkiste &6[&7player&6] &7>&f Open deine enderkiste or another players
+  &7/cartography &6[&7player&6] &7>&f Open a Kartographietisch table.
+  &7/grindstone &6[&7player&6] &7>&f Open a Schlefstein.
+  &7/loom &6[&7player&6] &7>&f Open a Webstuhl.
+  &7/stonecutter &6[&7player&6] &7>&f Open a stonecutter.
+
+  &7&oDeveloped by ItsSchatten on spigot.
+
+# The message that is sent if you disable a feature in the settings.yml.
+feature-disabled: "{prefix} That feature is disabled, sorry about that..."
+
+# The message that is sent to whomever reloaded the configs
+reload-message: "{prefix}&a The plugin has been reloaded."
+
+# The message that is sent to whomever reloaded the specified config.
+reload-message-specific: "{prefix}&a The file {file} was reloaded."
+
+# A message that is sent if an argument is incorrect für the command.
+wrong-args: "{prefix}&c You've added inappropriate arguments!"
+
+# The message that is sent when someone doesn't add arguments or doesn't add enough to complete a command.
+not-enough-args: "{prefix}&c Please add some more arguments, if you need more help use &7/pci&c."
+
+# This message is sent when someone adds TO many arguments that aren't needed, this really isn't that useful I just
+# added it in the event you want to use. (There is an option in the config to disable this.)
+too-many-args: "{prefix} &cYou've added too many arguments!"
+
+# This message is sent when something doesn't exist.
+doesnt-exist: "{prefix} &cSomething that you've entered doesn't exist."
+
+# This message is sent when a doesn't exist.
+player-doesnt-exist: "{prefix}&e {player}&c doesn't exist."
+
+# This message is sent when an update to the plugin is available. (In-game only)
+update-available: |+
+
+  &7There is an update für &dPortable Crafting Invs&7!
+  &7We recommened that you update to the latest version!
+  &bCurrent &e{currentVer} &bNew Version &e{newVer}&7.
+  &7Click the link to get it. &e{link}
+
+# ------------------------------------------------------------------------------------- #
+#                                                                                       #
+#                               Inventory Open Messages                                 #
+#                                                                                       #
+# ------------------------------------------------------------------------------------- #
+
+
+# This message is sent to a player when executing /enderkiste command.
+opened-enderchest: "{prefix} Öffne deine enderkiste ."
+
+# This message is sent to a player when öffne another players enderchest.
+# This message has a fancy modifier that uses appropriate pluralisation to a players name.
+# To use it do {playerFormatted}
+open-target-enderchest-old: "{prefix} öffne {player} enderkiste ."
+
+# This message is sent when the setting 'old-enderchest' is false.
+open-target-enderchest: "{prefix} öffne {player} enderkiste für {player}."
+
+# This message is sent when öffne a Werkbank using /craft.
+opened-craftingtable: "{prefix} Öffne Werkbank."
+
+# This message is sent to the target of /craft <target> command.
+opened-craftingtable-other: "{prefix} Öffne Werkbank für &e{player}&r."
+
+# This message is sent when someone opens an Amboss using /anvil.
+opened-anvil: "{prefix} Öffne Amboss."
+
+# This message is sent to the target of the /anvil <target> command.
+opened-anvil-other: "{prefix} Öffne Amboss für {player}"
+
+# This message is sent when öffne an enchant table using /enchanttable
+# (I don't plan to add an alias of /enchant für this command. This would cause issues with the regular /enchant command.)
+opened-enchanttable: "{prefix} Öffne Verzauberungstisch."
+
+# Sent when the player opens an enchant table with a defined max level.
+opened-enchanttable-with-max-level: "{prefix} Öffne Verzauberungstisch auf dem Maximalem Level."
+
+# Sent when the player passes a higher then the max defined in the settings when öffne the enchant table.
+must-be-in-range: "{prefix} &cDu must eine Nummer zwischen &e{min}&c und &e{max}&c."
+
+# This message is sent to the target of /enchanttable <target> command.
+opened-enchanttable-other: "{prefix} Öffne Verzauberungstisch für {player}."
+
+# The message that is sent if a player tries to take an item from their portable enderchest.
+cant-retrieve-from-enderchest: "{prefix} &cDu kannst keine Items von deiner portablen enderkiste!"
+
+# The message that is sent when öffne the Schlefstein.
+opened-grindstone: "{prefix} Öffne the Schlefstein."
+
+# The message that is sent when öffne the Schlefstein für someone else.
+opened-grindstone-other: "{prefix} Öffne the Schlefstein für {player}."
+
+# The message that is sent when öffne the Webstuhl.
+opened-loom: "{prefix} Öffne the Webstuhl."
+
+# The message that is sent when öffne the Webstuhl für someone else.
+opened-loom-other: "{prefix} Öffne the Webstuhl für {player}."
+
+# The message that is sent when öffne the Kartographietisch.
+opened-cartography: "{prefix} Öffne the Kartographietisch."
+
+# The message that is sent when öffne the Kartographietisch für someone else.
+opened-cartography-other: "{prefix} Öffne the Kartographietisch für {player}."
+
+# The message that is sent when öffne the stone cutter.
+opened-stonecutter: "{prefix} Öffne the stone cutter."
+
+# The message that is sent when öffne the stone cutter für someone else.
+opened-stonecutter-other: "{prefix} Öffne the stone cutter für {player}."
+
+# The message that is sent when öffne the  Schmiedetisch.
+opened-smithing-table: "{prefix} Öffne the  Schmiedetisch."
+
+# The message that is sent when öffne the  Schmiedetisch für someone else.
+opened-smithing-table-other: "{prefix} Öffne the  Schmiedetisch für {player}."
+
+# The message that is sent when öffne the furnace.
+opened-brewing: "{prefix} Öffne deine virtuellen Braustand."
+
+# The message that is sent when öffne the furnace für someone else.
+opened-brewing-other: "{prefix} Öffne virtuellen Braustand für {player}."
+
+# The message that is sent when öffne the furnace.
+opened-furnace: "{prefix} Öffne deine virtuellen Ofen."
+
+# The message that is sent when öffne the furnace für someone else.
+opened-furnace-other: "{prefix} Öffne virtuellen Ofen für {player}."
+
+# The message that is sent when öffne the blast furnace.
+opened-blast-furnace: "{prefix} Öffne deine virtual blast furnace."
+
+# The message that is sent when öffne the blast furnace für someone else.
+opened-blast-furnace-other: "{prefix} Öffne virtual blast furnace für {player}."
+
+# The message that is sent when öffne the smoker.
+opened-smoker: "{prefix} Öffne deine virtual smoker."
+
+# The message that is sent when öffne the smoker für someone else.
+opened-smoker-other: "{prefix} Öffne virtual smoker für {player}."
+
+# ------------------------------------------------------------------------------------- #
+#                                                                                       #
+#                                       Sign Messages                                   #
+#                                                                                       #
+# ------------------------------------------------------------------------------------- #
+
+# This is what is sent to the player if they try to break without shift clicking.
+shift-click-to-break-sign: "{prefix}&c You must shift left-click to break this sign."
+
+# This is what the sign text will turn to when creating the Amboss sign.
+anvil-sign: "&3[Anvil]"
+
+# This is what the sign text will turn to when creating the Kartographietisch sign.
+cartography-sign: "&3[Cartography]"
+
+# This is what the sign text will turn to when creating the crafting sign.
+crafting-sign: "&3[Crafting]"
+
+# This is what the sign text will turn to when creating the Verzauberungstisch sign.
+enchant-table-sign: "&3[EnchantTable]"
+
+# This is what the sign text will turn to when creating the enderkiste sign.
+enderchest-sign: "&3[Enderchest]"
+
+# This is what the sign text will turn to when creating the Schlefstein sign.
+grindstone-sign: "&3[Grindstone]"
+
+# This is what the sign text will turn to when creating the Webstuhl sign.
+loom-sign: "&3[Loom]"
+
+# This is what the sign text will turn to when creating the stonecutter sign.
+stonecutter-sign: "&3[Stonecutter]"
+
+# This is what the sign text will turn to when creating the blast furnace sign.
+blast-furnace-sign: "&3[Blast Furnace]"
+
+# This is what the sign text will turn to when creating the brewing sign.
+brewing-sign: "&3[Brew]"
+
+# This is what the sign text will turn to when creating the furnace sign.
+furnace-sign: "&3[Furnace]"
+
+# This is what the sign text will turn to when creating the smoker sign.
+smoker-sign: "&3[Smoker]"
+
+# This is what the sign text will turn to when creating the  Schmiedetisch sign.
+smithing-sign: "&3[Smithing Table]"
+
+# This is what is sent to the player to confirm the creation of the Amboss sign.
+anvil-sign-created: "{prefix} You've created an Amboss sign."
+
+# This is what is sent to the player to confirm the creation of the Kartographietisch sign.
+cartography-sign-created: "{prefix} You've created a Kartographietisch sign."
+
+# This is what is sent to the player to confirm the creation of the crafting sign.
+crafting-sign-created: "{prefix} You've created a crafting sign."
+
+# This is what is sent to the player to confirm the creation of the Verzauberungstisch sign.
+enchant-table-sign-created: "{prefix} You've created an Verzauberungstisch sign."
+
+# This is what is sent to the player to confirm the creation of the enderkiste sign.
+enderchest-sign-created: "{prefix} You've created an enderkiste sign."
+
+# This is what is sent to the player to confirm the creation of the Schlefstein sign.
+grindstone-sign-created: "{prefix} You've created a Schlefstein sign."
+
+# This is what is sent to the player to confirm the creation of the Webstuhl sign.
+loom-sign-created: "{prefix} You've created a Webstuhl sign."
+
+# This is what is sent to the player to confirm the creation of the stonecutter sign.
+stonecutter-sign-created: "{prefix} You've created a stonecutter sign."
+
+# This is what is sent to the player to confirm the creation of the  Schmiedetisch sign.
+smithing-sign-created: "{prefix} You've created a  Schmiedetisch sign."
+
+# This is what is sent to the player to confirm the creation of a blast furnace sign.
+blast-furnace-sign-created: "{prefix} You've created a blast furnace sign."
+
+# This is what is sent to the player to confirm the creation of a brewing stand sign.
+brewing-sign-created: "{prefix} You've created a brewing stand sign."
+
+# This is what is sent to the player to confirm the creation of a furnace sign.
+furnace-sign-created: "{prefix} You've created a furnace sign."
+
+# This is what is sent to the player to confirm the creation of a smoker sign.
+smoker-sign-created: "{prefix} You've created a smoker sign."
