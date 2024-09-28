@@ -1,5 +1,5 @@
 # translations
-random ranslation i need for some plugins
+Random ranslation i need for some plugins
 
 # Links for other translations
 
